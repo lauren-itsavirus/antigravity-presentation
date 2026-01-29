@@ -1,0 +1,26 @@
+import Slide from '../_components/Slide';
+
+export default function TechSlide() {
+  return (
+    <Slide>
+      <h2 className="text-6xl font-bold text-white mb-12">The Stack</h2>
+      <div className="grid grid-cols-2 gap-8 max-w-6xl">
+        <div className="p-8 bg-zinc-800/50 rounded-2xl border border-zinc-700">
+          <h3 className="text-3xl font-bold text-blue-400 mb-4">Core</h3>
+          <ul className="text-2xl text-zinc-300 space-y-2">
+            <li>Next.js 14+ (App Router)</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div className="p-8 bg-zinc-800/50 rounded-2xl border border-zinc-700">
+          <h3 className="text-3xl font-bold text-purple-400 mb-4">Animation</h3>
+          <ul className="text-2xl text-zinc-300 space-y-2">
+            <li>Framer Motion</li>
+            <li>Three.js (Concept)</li>
+          </ul>
+        </div>
+      </div>
+    </Slide>
+  );
+}
